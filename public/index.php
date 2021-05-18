@@ -5,6 +5,4 @@
 
 	$route = new \App\Route;
 	
-
-	print_r($route->getUrl());
 ?>
