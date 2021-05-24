@@ -2,15 +2,24 @@
 
 namespace App\Controllers;
 
-class IndexController {
+use MF\Controller\Action;
+
+class IndexController extends Action {
+
+	
 
 	public function index(){
-		echo "Chegams oa index controller ";
+
+		$this->view->dados = array('teste', 'teste2');
+		$this->render('index');
 	}
 
 	public function sobreNos(){
-		echo "chegamos no sobre nos ";
+		$this->render('sobreNos');
 	}
+
+
+	
 }
 
 ?>
